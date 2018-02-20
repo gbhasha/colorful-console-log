@@ -1,7 +1,7 @@
 {
   "name": "colorful-console-log",
   "version": "1.0.0",
-  "description": "Describe colorful-console-log here",
+  "description": "Print console messages colorful in both terminal and browser.",
   "main": "lib/index.js",
   "module": "es/index.js",
   "files": [
@@ -17,12 +17,13 @@
     "test:watch": "nwb test --server"
   },
   "dependencies": {
+    "chalk": "^2.3.1"
   },
   "devDependencies": {
     "nwb": "0.21.x"
   },
-  "author": "",
+  "author": "Galeel Bhasha Satthar <gbhasha@gmail.com>",
   "homepage": "",
   "license": "MIT",
-  "repository": ""
+  "repository": "https://github.com/gbhasha/colorful-console-log"
 }

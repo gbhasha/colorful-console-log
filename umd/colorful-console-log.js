@@ -964,7 +964,8 @@ var rainbowColors = {
   green: '#00FF00',
   yellow: '#FFFF00',
   orange: '#FF7F00',
-  red: '#FF0000'
+  red: '#FF0000',
+  white: '#FFFFFF'
 };
 
 var log = function log(color) {
@@ -973,21 +974,19 @@ var log = function log(color) {
       args[_key] = arguments[_key];
     }
 
-    var msg = '';
     var len = args.length;
-    for (var i in args) {
-      if (i == 0) {
-        msg += args[i];
-      } else {
-        msg += ' ' + args[i];
-      }
-    }
+    var rest = args.splice(1);
+
     if (typeof window === 'undefined') {
+      var _console;
+
       // on nodeJS env
-      console.log(chalk.hex(color)(msg));
+      (_console = console).log.apply(_console, [chalk.hex(color)(args[0])].concat(rest));
     } else {
+      var _console2;
+
       // on browser env
-      console.log('%c ' + msg, 'color:' + color);
+      (_console2 = console).log.apply(_console2, ['%c ' + args[0], 'color:' + color].concat(rest));
     }
   };
 };
@@ -999,7 +998,8 @@ module.exports = {
   green: log(rainbowColors.green),
   yellow: log(rainbowColors.yellow),
   orange: log(rainbowColors.orange),
-  red: log(rainbowColors.red)
+  red: log(rainbowColors.red),
+  white: log(rainbowColors.white)
 };
 
 /***/ }),

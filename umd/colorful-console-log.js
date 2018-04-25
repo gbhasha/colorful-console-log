@@ -1,5 +1,5 @@
 /*!
- * colorful-console-log v1.0.0
+ * colorful-console-log v1.0.1
  * MIT Licensed
  */
 (function webpackUniversalModuleDefinition(root, factory) {

@@ -17,13 +17,13 @@
     "test:watch": "nwb test --server"
   },
   "dependencies": {
-    "chalk": "^2.3.1"
+    "chalk": "^2.4.0"
   },
   "devDependencies": {
-    "nwb": "0.21.x"
+    "nwb": "^0.21.5"
   },
   "author": "Galeel Bhasha Satthar <gbhasha@gmail.com>",
-  "homepage": "",
+  "homepage": "https://github.com/gbhasha",
   "license": "MIT",
   "repository": "https://github.com/gbhasha/colorful-console-log"
 }

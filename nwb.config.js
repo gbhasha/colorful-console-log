@@ -6,5 +6,9 @@ module.exports = {
       global: '$console',
       externals: {}
     }
+  },
+
+  karma: {
+    browsers: ['Chrome']
   }
 }
